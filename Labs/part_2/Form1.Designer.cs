@@ -1,5 +1,5 @@
 ﻿
-namespace Labs.part1
+namespace Labs.part2_3
 {
     partial class Form2
     {
@@ -41,7 +41,6 @@ namespace Labs.part1
             this.firstOperandTB.Name = "firstOperandTB";
             this.firstOperandTB.Size = new System.Drawing.Size(100, 20);
             this.firstOperandTB.TabIndex = 0;
-            this.firstOperandTB.Leave += new System.EventHandler(this.firstOperandTB_Leave);
             // 
             // operationTB
             // 
@@ -49,7 +48,6 @@ namespace Labs.part1
             this.operationTB.Name = "operationTB";
             this.operationTB.Size = new System.Drawing.Size(100, 20);
             this.operationTB.TabIndex = 1;
-            this.operationTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.operationTB_KeyDown);
             // 
             // secondOperandTB
             // 
@@ -57,7 +55,6 @@ namespace Labs.part1
             this.secondOperandTB.Name = "secondOperandTB";
             this.secondOperandTB.Size = new System.Drawing.Size(100, 20);
             this.secondOperandTB.TabIndex = 2;
-            this.secondOperandTB.Leave += new System.EventHandler(this.secondOperandTB_Leave);
             // 
             // startCalcLabel
             // 
