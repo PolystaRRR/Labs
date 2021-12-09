@@ -1,7 +1,7 @@
 ﻿
-namespace Labs.part2_3
+namespace Labs.part_2
 {
-    partial class Form2
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,56 +29,36 @@ namespace Labs.part2_3
         /// </summary>
         private void InitializeComponent()
         {
-            this.firstOperandTB = new System.Windows.Forms.TextBox();
-            this.operationTB = new System.Windows.Forms.TextBox();
-            this.secondOperandTB = new System.Windows.Forms.TextBox();
-            this.startCalcLabel = new System.Windows.Forms.LinkLabel();
+            this.OperandTB = new System.Windows.Forms.MaskedTextBox();
+            this.eventBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // firstOperandTB
+            // OperandTB
             // 
-            this.firstOperandTB.Location = new System.Drawing.Point(248, 196);
-            this.firstOperandTB.Name = "firstOperandTB";
-            this.firstOperandTB.Size = new System.Drawing.Size(100, 20);
-            this.firstOperandTB.TabIndex = 0;
+            this.OperandTB.Location = new System.Drawing.Point(442, 146);
+            this.OperandTB.Name = "OperandTB";
+            this.OperandTB.Size = new System.Drawing.Size(100, 20);
+            this.OperandTB.TabIndex = 0;
+            this.OperandTB.Leave += new System.EventHandler(this.operandTB_Leave);
             // 
-            // operationTB
+            // eventBtn
             // 
-            this.operationTB.Location = new System.Drawing.Point(440, 196);
-            this.operationTB.Name = "operationTB";
-            this.operationTB.Size = new System.Drawing.Size(100, 20);
-            this.operationTB.TabIndex = 1;
+            this.eventBtn.Location = new System.Drawing.Point(453, 172);
+            this.eventBtn.Name = "eventBtn";
+            this.eventBtn.Size = new System.Drawing.Size(75, 23);
+            this.eventBtn.TabIndex = 1;
+            this.eventBtn.Text = "button1";
+            this.eventBtn.UseVisualStyleBackColor = true;
             // 
-            // secondOperandTB
-            // 
-            this.secondOperandTB.Location = new System.Drawing.Point(639, 196);
-            this.secondOperandTB.Name = "secondOperandTB";
-            this.secondOperandTB.Size = new System.Drawing.Size(100, 20);
-            this.secondOperandTB.TabIndex = 2;
-            // 
-            // startCalcLabel
-            // 
-            this.startCalcLabel.AutoSize = true;
-            this.startCalcLabel.Location = new System.Drawing.Point(459, 274);
-            this.startCalcLabel.Name = "startCalcLabel";
-            this.startCalcLabel.Size = new System.Drawing.Size(46, 13);
-            this.startCalcLabel.TabIndex = 3;
-            this.startCalcLabel.TabStop = true;
-            this.startCalcLabel.Text = "Ответ : ";
-            this.startCalcLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.startCalcLabel_LinkClicked);
-            // 
-            // Form2
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1261, 635);
-            this.Controls.Add(this.startCalcLabel);
-            this.Controls.Add(this.secondOperandTB);
-            this.Controls.Add(this.operationTB);
-            this.Controls.Add(this.firstOperandTB);
-            this.Name = "Form2";
+            this.ClientSize = new System.Drawing.Size(1092, 596);
+            this.Controls.Add(this.eventBtn);
+            this.Controls.Add(this.OperandTB);
+            this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,9 +66,7 @@ namespace Labs.part2_3
 
         #endregion
 
-        private System.Windows.Forms.TextBox firstOperandTB;
-        private System.Windows.Forms.TextBox operationTB;
-        private System.Windows.Forms.TextBox secondOperandTB;
-        private System.Windows.Forms.LinkLabel startCalcLabel;
+        private System.Windows.Forms.MaskedTextBox OperandTB;
+        private System.Windows.Forms.Button eventBtn;
     }
 }
