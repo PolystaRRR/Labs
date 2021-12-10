@@ -16,7 +16,7 @@ namespace Labs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new part_2.Form1());
+            Application.Run(new lab4.Form1());
         }
     }
 }

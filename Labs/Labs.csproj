@@ -46,24 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="part1\Form2.cs">
+    <Compile Include="lab4\EditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="part1\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="lab4\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="part_2\Form1.cs">
+    <Compile Include="lab4\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="part_2\Form1.Designer.cs">
+    <Compile Include="lab4\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="part1\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="lab4\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="part_2\Form1.resx">
+    <EmbeddedResource Include="lab4\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
