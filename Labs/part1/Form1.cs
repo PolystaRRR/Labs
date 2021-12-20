@@ -19,43 +19,23 @@ namespace Labs
 
         private void sbyteTypeBtn_Click(object sender, EventArgs e)
         {
-            BtnClick(sbyteTypeLabel, 3, typeof(sbyte));
+            sbyteTypeLabel.Text = sizeof(sbyte).ToString()  + "\n" + + sbyte.MinValue + "\n" + sbyte.MaxValue;
         }
 
         private void ulongTypeBtn_Click(object sender, EventArgs e)
         {
-            BtnClick(ulongTypeLabel, 64, typeof(ulong));
+            ulongTypeLabel.Text = sizeof(ulong).ToString() + "\n" + ulong.MinValue + "\n " + ulong.MaxValue;
         }
 
         private void shortTypeBtn_Click(object sender, EventArgs e)
         {
-            BtnClick(shortTypeLabel, 16, typeof(short));
+            shortTypeLabel.Text = sizeof(short).ToString() + "\n" + short.MinValue + "\n" + short.MaxValue;
         }
 
         private void decimalTypeBtn_Click(object sender, EventArgs e)
         {
-            BtnClick(decimalTypeLabel, 12, typeof(decimal));
+            decimalTypeLabel.Text = sizeof(decimal).ToString() + "\n" + decimal.MinValue + "\n " + decimal.MaxValue;
         }
-        /// <summary>
-        /// Handler for different types
-        /// </summary>
-        /// <param name="label">Label for output info</param>
-        /// <param name="typeSize"> Size of type</param>
-        /// <param name="valueType"> Current type</param>
-        private static void BtnClick(Label label, short typeSize, Type valueType)
-        {
-            if (valueType == typeof(sbyte))
-                label.Text = $"sbyte min value: {sbyte.MinValue}\n" +
-                $"sbyte max value: {sbyte.MaxValue}\n" + $"sbyte size is {typeSize} bit";
-
-            else if (valueType == typeof(ulong)) label.Text = $"ulong min value: {ulong.MinValue}\n" +
-            $"ulong max value: {ulong.MaxValue}\n" + $"ulong size is {typeSize} bit";
-
-            else if (valueType == typeof(short)) label.Text = $"short min value: {short.MinValue}\n" +
-            $"short max value: {short.MaxValue}\n" + $"short size is {typeSize} bit";
-
-            else if (valueType == typeof(decimal)) label.Text = $"decimal min value: {decimal.MinValue}\n" +
-            $"decimal max value: {decimal.MaxValue}\n" + $"decimal size is {typeSize} bit";
-        }
+     
     }
 }
