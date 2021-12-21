@@ -20,9 +20,11 @@ namespace Labs.part_2
         private void operandTB_Leave(object sender, EventArgs e)
         {
             string str = OperandTB.Text;
-            if (str.StartsWith("https://virtual.ulstu.ru/"))
+            if (str.StartsWith("https://virtual.ulstu.ru/")&str.LastIndexOf('i') == 9)
+               
                 eventBtn.Enabled = true;
             else eventBtn.Enabled = false;
         }
+
     }
 }
